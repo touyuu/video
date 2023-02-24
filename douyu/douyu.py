@@ -58,7 +58,8 @@ class DouYu:
         res = self.s.post(url, headers=headers, data=data).json()
         error = res['error']
         data = res['data']
-        key = ''
+        rtmp_live = ''
+        rtmp_url = ''
         if data:
             rtmp_live = data['rtmp_live']
             rtmp_url = data['rtmp_url']
