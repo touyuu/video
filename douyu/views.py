@@ -12,4 +12,4 @@ def index(request, id):
     #return HttpResponse("Hello, world. You're at the polls index.")
 
     s = DouYu(id)
-    return redirect(s.get_pre(), permanent=True)
+    return redirect(s.get_real_url(), permanent=True)
