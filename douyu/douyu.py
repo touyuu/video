@@ -76,7 +76,7 @@ class DouYu:
 
     def get_real_url(self):
         key = self.get_js()
-        return "http://hw-tct.douyucdn.cn/live/{}.flv?uuid=".format(key)
+        return "http://hw-tct.douyucdn.cn/live/{}.xs?uuid=".format(key)
 
 if __name__ == '__main__':
     r = input('输入斗鱼直播间号：\n')
