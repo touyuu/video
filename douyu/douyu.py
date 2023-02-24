@@ -58,11 +58,8 @@ class DouYu:
         res = self.s.post(url, headers=headers, data=data).json()
         error = res['error']
         data = res['data']
-        rtmp_live = ''
-        rtmp_url = ''
-        if data:
-            rtmp_live = data['rtmp_live']
-            rtmp_url = data['rtmp_url']
+        rtmp_live = data['rtmp_live']
+        rtmp_url = data['rtmp_url']
         return rtmp_url + '/' + rtmp_live
 
     def get_js(self):
