@@ -61,8 +61,8 @@ class DouYu:
         key = ''
         if data:
             rtmp_live = data['rtmp_live']
-            key = re.search(r'(\d{1,8}[0-9a-zA-Z]+)_?\d{0,4}(/playlist|.m3u8)', rtmp_live).group(1)
-        return error, key
+            rtmp_url = data['rtmp_url']
+        return rtmp_url + '/' + rtmp_live
 
     def get_js(self):
         result = re.search(r'(function ub98484234.*)\s(var.*)', self.res).group()
@@ -107,4 +107,4 @@ class DouYu:
 if __name__ == '__main__':
     r = input('输入斗鱼直播间号：\n')
     s = DouYu(r)
-    print(s.get_real_url())
+    print(s.get_pre())
