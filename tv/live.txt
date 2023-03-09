@@ -72,4 +72,3 @@ CHC高清电影,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226463/in
 纯享4k,http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225786/index.m3u8
 爱上4k,http://dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226352/1.m3u8
 欢笑剧场4k,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226582/index.m3u8
-
